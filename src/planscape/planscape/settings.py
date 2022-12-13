@@ -206,6 +206,6 @@ CRS_9822_PROJ4 = (
 CACHES = {
     'default': {
         'BACKEND': config('PLANSCAPE_CACHE_BACKEND', default='django.core.cache.backends.locmem.LocMemCache'),
-        'LOCATION': config('PLANSCAPE_CACHE_LOCATION', 'planscape-cache'),
+        'LOCATION': config('PLANSCAPE_CACHE_LOCATION', default='planscape-cache'),
     }
 }
